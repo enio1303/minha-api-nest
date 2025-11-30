@@ -17,6 +17,7 @@ COPY . .
 # Compilar NestJS (gera dist/)
 RUN npm run build
 
+
 # ==========================
 # 2) Stage Final (produção)
 # ==========================
