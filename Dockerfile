@@ -1,4 +1,3 @@
-# ==========================
 # 1) Stage de Build
 # ==========================
 FROM node:18-alpine AS builder
@@ -17,8 +16,6 @@ COPY . .
 # Compilar NestJS (gera dist/)
 RUN npm run build
 
-
-# ==========================
 # 2) Stage Final (produção)
 # ==========================
 FROM node:18-alpine
